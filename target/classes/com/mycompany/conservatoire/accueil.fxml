@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.conservatoire.AccueilController">
+   <children>
+      <Label layoutX="230.0" layoutY="84.0" text="CONSERVATOIRE DE NICE ">
+         <font>
+            <Font name="System Bold Italic" size="24.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="110.0" fitWidth="99.0" layoutX="239.0" layoutY="140.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@danse.png" />
+         </image></ImageView>
+      <ImageView fitHeight="95.0" fitWidth="99.0" layoutX="420.0" layoutY="128.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@musique.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="95.0" fitWidth="92.0" layoutX="328.0" layoutY="141.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@theatre.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="328.0" layoutY="242.0" text="et bien plus...">
+         <font>
+            <Font name="System Italic" size="14.0" />
+         </font>
+      </Label>
+      <fx:include source="menu.fxml" />
+      <ImageView fx:id="loginImg" fitHeight="35.0" fitWidth="26.0" layoutX="560.0" layoutY="14.0" onMouseClicked="#goCnx" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@login.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <ImageView fx:id="logoutImg" fitHeight="26.0" fitWidth="26.0" layoutX="560.0" layoutY="14.0" onMouseClicked="#logout" pickOnBounds="true" preserveRatio="true" visible="false">
+         <image>
+            <Image url="@logout.png" />
+         </image>
+         <cursor>
+            <Cursor fx:constant="OPEN_HAND" />
+         </cursor>
+      </ImageView>
+      <Label alignment="CENTER" layoutX="368.0" layoutY="300.0" prefHeight="18.0" prefWidth="230.0" text="Conservatoire à Rayonnement Régional" textOverrun="CENTER_ELLIPSIS" />
+      <Label alignment="CENTER" layoutX="447.0" layoutY="318.0" prefHeight="18.0" prefWidth="138.0" text="127, avenue de Brancolar" textOverrun="CENTER_ELLIPSIS" />
+      <Label layoutX="471.0" layoutY="336.0" prefHeight="18.0" prefWidth="115.0" text=" 06364 Nice Cedex 4" />
+      <Label layoutX="477.0" layoutY="354.0" text="Tél : 04 97 13 50 00" />
+      <Label layoutX="387.0" layoutY="372.0" text="E-mail : info@conservatoire-nice.org" />
+   </children>
+</AnchorPane>

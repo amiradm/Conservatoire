@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="144.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.mycompany.conservatoire.MenuController">
+   <children>
+      <ImageView fitHeight="122.0" fitWidth="169.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@conservatoirelogo.jpg" />
+         </image>
+      </ImageView>
+      <Hyperlink layoutX="58.0" layoutY="167.0" onMouseClicked="#goHoraires" text="Horaires" />
+      <Hyperlink fx:id="ajoutLink" layoutX="38.0" layoutY="231.0" onMouseClicked="#goAjoutPartitions" text="Saisie partitions" />
+      <Hyperlink fx:id="rechercheLink" layoutX="26.0" layoutY="298.0" onMouseClicked="#goPartitions" text="Recherche partitions" />
+      <Line endX="13.000015258789062" endY="-14.0" layoutX="156.0" layoutY="14.0" startX="11.200027465820312" startY="386.0" />
+   </children>
+</AnchorPane>
